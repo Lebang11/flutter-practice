@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
-  home: Home()
-  ));
+  runApp(MaterialApp(home: Home()));
 }
 
 class Home extends StatelessWidget {
@@ -15,17 +13,11 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.pink,
       ),
-      body: Row(
-        children: [
-          Text('hello, world'),
-          TextButton(
-              onPressed: () {print("I've been pressed fr fr");},
-              child: Text(
-                'This is button'
-              ),
-          )
-        ],
-      ),
+      body: Container(
+          padding: EdgeInsets.fromLTRB(10.0, 20.0, 30.0, 40.0),
+          margin: EdgeInsets.all(30.0),
+          color: Colors.grey[400],
+          child: Text('hello')),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Text('click me'),
